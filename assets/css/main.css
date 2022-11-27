@@ -10,6 +10,8 @@ p {
     line-height: 1.8;
 }
 :root {
-	--mainColor: #f30235;
-    --secondColor: #494c4f;
+	--mainColor: #b21f01;
+}
+body{
+    font-size: .9rem;
 }
