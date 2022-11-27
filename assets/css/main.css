@@ -14,4 +14,38 @@ p {
 }
 body{
     font-size: .9rem;
+    background-color: #F1F1F1;
+}
+/* Header */
+.main-header{
+    box-shadow: rgb(0 0 0 / 10%) 1px 0 3px 4px;
+    background-color: #ffffffbb;
+    backdrop-filter: blur(15px);
+}
+.navbar>a{
+    float: right;
+    text-align: center;
+    padding: 1.3rem 0;
+}
+.navbar>a:hover, .dropdown>a:hover{
+    color: var(--mainColor);
+}
+.dropdown>a{
+    padding: 1.3rem 0;
+    display: block;
+}
+.dropdown .dropdown-content{
+     opacity: 0;
+     visibility: hidden;
+     transition: all 0.3s;
+}
+.dropdown:hover .dropdown-content{
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown ul>li{
+    line-height: 1.8;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: var(--mainColor);
 }

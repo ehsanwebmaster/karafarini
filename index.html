@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="IR-FA" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,23 +19,81 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="font-yekanbakh">
+
+<body class="font-iransans h-[2000px]">
     <header class="header">
-        <section class="bg-mainColor text-white py-2">
+        <section class="bg-mainColor text-white py-2 hidden lg:block">
             <div class="container mx-auto sm:px-16 px-2">
-                <ul class="flex justify-end space-x-5 space-x-reverse">
-                    <li><a class="hover:text-white" href="#">آموزش جاوا اسکریپت</a></li>
-                    <li><a class="hover:text-white" href="#">آموزش سئو</a></li>
-                    <li><a class="hover:text-white" href="#">آموزش tailwind</a></li>
-                    <li><a class="hover:text-white" href="#">آموزش بوت استرپ</a></li>
+                <ul class="flex justify-end space-x-5 space-x-reverse text-[0.8rem]">
+                    <li><a class="hover:text-white" href="#">خانه</a></li>
+                    <li><a class="hover:text-white" href="#">اخبار جدید و اطلاع رسانی</a></li>
+                    <li><a class="hover:text-white" href="#">صادرات و واردات</a></li>
+                    <li><a class="hover:text-white" href="#">رویدادهای ویژه</a></li>
                 </ul>
             </div>
         </section>
+        <section class="main-header py-2" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+            <div class="container mx-auto sm:px-16 px-1">
+                <div class="grid grid-cols-12 gap-3 items-center">
+                    <!-- logo -->
+                    <div class="col-span-1">
+                        <a href="#"><img class="w-full px-4" src="./assets/img/logo.png" alt=""></a>
+                    </div>
+                    <!-- Main menus  -->
+                    <div class="col-span-10">
+                        <nav class="navbar overflow-hidden flex justify-center space-x-6 space-x-reverse font-bold">
+                            <a href="#">خانه</a>
+                            <a href="#">اخبارجدید و اطلاع رسانی</a>
+                            <div class="dropdown overflow-hidden float-right">
+                                <a href="#" class="dropbtn">صادرات و واردات <i class="fa-solid fa-caret-down"></i></a>
+                                <div class="dropdown-content absolute bg-[#e3e3e3] w-full left-0 top-[4.5rem]">
+                                    <div class="container mx-auto sm:px-16 py-4">
+                                        <div class="flex justify-center space-x-10 space-x-reverse">
+                                            <ul>
+                                                <li><a href="#">اقتصادی</a></li>
+                                                <li><a href="#">صنعت و تولید</a></li>
+                                                <li><a href="#">قوانین و مصوبات</a></li>
+                                                <li><a href="#">همایش و سمینار</a></li>
+                                                <li><a href="#">وام و تسهیلات</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">اقتصادی</a></li>
+                                                <li><a href="#">صنعت و تولید</a></li>
+                                                <li><a href="#">قوانین و مصوبات</a></li>
+                                                <li><a href="#">همایش و سمینار</a></li>
+                                                <li><a href="#">وام و تسهیلات</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">رویدادهای ویژه</a>
+                            <a href="#">اخبار سازمانها و نهادها</a>
+                            <a href="#">یادداشتهای ویژه</a>
+                            <a href="#">مهارتهای شغلی</a>
+                            <a href="#">بازاریابی و تبلیغات</a>
+                            <a href="#">درباره ما</a>
+                        </nav>
+                    </div>
+                    <!-- Left of Header  -->
+                    <div class="col-span-1">
+                        <ul class="flex justify-end space-x-3 space-x-reverse text-xl">
+                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
+    <main class="pt-4">
+    </main>
+
 
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/uikit/js/uikit.min.js"></script>
     <script src="./assets/OwlCarousel/dist/owl.carousel.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily:{
         yekanbakh : "yekanbakh",
-        yekanbakhbold: "yekanbakhbold",
+        yekanbakh : "yekanbakh",
+        iransans: "iransans",
       },
       colors:{
         mainColor: "#b21f01",
