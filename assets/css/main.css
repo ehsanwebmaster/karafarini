@@ -1,0 +1,15 @@
+a {
+    transition: all 0.3s;
+    text-decoration: none !important;
+}
+a:hover {
+    color: black;
+}
+p {
+    text-align: justify;
+    line-height: 1.8;
+}
+:root {
+	--mainColor: #f30235;
+    --secondColor: #494c4f;
+}

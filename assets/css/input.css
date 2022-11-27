@@ -1,0 +1,19 @@
+@font-face {
+	font-family: yekanbakh;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/Webfonts/fonts/woff/YekanBakhFaNum-Regular.woff');
+	src: url('../fonts/Webfonts/fonts/woff/YekanBakhFaNum-Regular.woff') format('embedded-opentype');  /* IE6-8 */
+	src: url('../fonts/Webfonts/fonts/woff2/YekanBakhFaNum-Regular.woff2') format('woff2');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: yekanbakhbold;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/Webfonts/fonts/woff/YekanBakhFaNum-Bold.woff');
+	src: url('../fonts/Webfonts/fonts/woff/YekanBakhFaNum-Bold.woff') format('embedded-opentype');  /* IE6-8 */
+	src: url('../fonts/Webfonts/fonts/woff2/YekanBakhFaNum-Bold.woff2') format('woff2');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
