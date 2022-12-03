@@ -32,7 +32,7 @@
                 </ul>
             </div>
         </section>
-        <section class="main-header py-2" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+        <section class="main-header py-2 z-50" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
             <div class="container mx-auto sm:px-16 px-1">
                 <div class="grid grid-cols-12 gap-3 items-center">
                     <!-- logo -->
@@ -41,39 +41,24 @@
                     </div>
                     <!-- Main menus  -->
                     <div class="col-span-10">
-                        <nav class="navbar overflow-hidden flex justify-center space-x-6 space-x-reverse font-bold">
-                            <a href="#">خانه</a>
-                            <a href="#">اخبارجدید و اطلاع رسانی</a>
-                            <div class="dropdown overflow-hidden float-right">
-                                <a href="#" class="dropbtn">صادرات و واردات <i class="fa-solid fa-caret-down"></i></a>
-                                <div class="dropdown-content absolute bg-[#e3e3e3] w-full left-0 top-[4.5rem]">
-                                    <div class="container mx-auto sm:px-16 py-4">
-                                        <div class="flex justify-center space-x-10 space-x-reverse">
-                                            <ul>
-                                                <li><a href="#">اقتصادی</a></li>
-                                                <li><a href="#">صنعت و تولید</a></li>
-                                                <li><a href="#">قوانین و مصوبات</a></li>
-                                                <li><a href="#">همایش و سمینار</a></li>
-                                                <li><a href="#">وام و تسهیلات</a></li>
-                                            </ul>
-                                            <ul>
-                                                <li><a href="#">اقتصادی</a></li>
-                                                <li><a href="#">صنعت و تولید</a></li>
-                                                <li><a href="#">قوانین و مصوبات</a></li>
-                                                <li><a href="#">همایش و سمینار</a></li>
-                                                <li><a href="#">وام و تسهیلات</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">رویدادهای ویژه</a>
-                            <a href="#">اخبار سازمانها و نهادها</a>
-                            <a href="#">یادداشتهای ویژه</a>
-                            <a href="#">مهارتهای شغلی</a>
-                            <a href="#">بازاریابی و تبلیغات</a>
-                            <a href="#">درباره ما</a>
-                        </nav>
+                        <ul class="navbar flex justify-center space-x-6 space-x-reverse font-bold">
+                            <li><a href="#">خانه</a></li>
+                            <li><a href="#">اخبارجدید و اطلاع رسانی <i class="fa-solid fa-caret-down"></i></a>
+                                <ul class="bg-[#e3e3e3] min-w-full p-2">
+                                    <li><a href="#">اقتصادی</a></li>
+                                    <li><a href="#">صنعت و تولید</a></li>
+                                    <li><a href="#">قوانین و مصوبات</a></li>
+                                    <li><a href="#">همایش و سمینار</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">صادرات و واردات</a></li>
+                            <li><a href="#">رویدادهای ویژه</a></li>
+                            <li><a href="#">اخبار سازمانها و نهادها</a></li>
+                            <li><a href="#">یادداشتهای ویژه</a></li>
+                            <li><a href="#">مهارتهای شغلی</a></li>
+                            <li><a href="#">بازاریابی و تبلیغات</a></li>
+                            <li><a href="#">درباره ما</a></li>
+                        </ul>
                     </div>
                     <!-- Left of Header  -->
                     <div class="col-span-1">
@@ -86,10 +71,199 @@
             </div>
         </section>
     </header>
-    <main class="pt-4">
+    <main class="pt-6">
+        <div class="container mx-auto sm:px-16 px-1">
+            <div class="grid grid-cols-4">
+                <div class="col-span-3">
+                    <section class="mainSlider w-full bg-white mainShadow rounded-md overflow-hidden relative">
+                        <div class="btnRightLeft absolute left-4 bottom-3 z-30">
+                            <button class="am-next"><i class="fa-solid fa-circle-right"></i></button>
+                            <button class="am-prev"><i class="fa-solid fa-circle-left"></i></button>
+                        </div>
+                        <div id="indexslide" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="grid grid-cols-4 gap-3">
+                                    <div class="col-span-2 sliderpix">
+                                        <a href="#"><img class="w-full h-full object-fill"
+                                                src="./assets/img/2-Copy-Copy-Copy-Copy-Copy-Copy-Copy-8-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy_001-2-2-357x250.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="col-span-2 p-4 relative">
+                                        <h3 class="leading-7 mb-3 text-lg"><a class="hover:text-mainColor"
+                                                href="#">سوءقصد به جان معاون صنایع عمومی و رئیس ستاد مبارزه با قاچاق
+                                                کالای وزارت صمت / محمد مهدی برادران در بخش مراقبت های ویژه بستری شد</a>
+                                        </h3>
+                                        <p>سوءقصد به جان معاون وزارت صمت/ محمد مهدی برادران در بخش مراقبت های ویژه بستری
+                                            شد. محمد مهدی براداران معاون صنایع عمومی وزارت صمت ، زمانی که قصد عزیمت به
+                                            منزل را داشته است ، از سوی فرد یا افراد ناشناس مورد سوء قصد قرار گرفته است.
+                                            بر اساس اطلاعات به دست آمده، این اتفاق […]
+                                        </p>
+                                        <span class="absolute bottom-2 right-4 text-gray-400"><i
+                                                class="fa-regular fa-clock"></i> 10 آذر 1401</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="grid grid-cols-4 gap-3">
+                                    <div class="col-span-2 sliderpix">
+                                        <a href="#"><img class="w-full h-full object-fill"
+                                                src="./assets/img/IMG-20221129-WA0023-400x200.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-span-2 p-4 relative">
+                                        <h3 class="leading-7 mb-3 text-lg"><a class="hover:text-mainColor" href="#">نشست
+                                                روسای سازمان بسیج اصناف کشور و تهران بزرگ با رئیس اتاق اصناف تهران
+                                                برگزار شد</a></h3>
+                                        <p>*نشست روسای سازمان بسیج اصناف کشور و تهران بزرگ با رئیس اتاق اصناف تهران
+                                            برگزار شد* 🔸نشست دکتر غلامرضا حسن پور رئیس سازمان بسیج اصناف، بازاریان و
+                                            فعالان اقتصادی کشور، سرهنگ نعمت کاکاوند رئیس سازمان بسیج اصناف، بازاریان و
+                                            فعالان اقتصادی تهران بزرگ و حجت الاسلام ناسخی مسئول فقه و بازار بسیج اصناف
+                                            […]</p>
+                                        <span class="absolute bottom-2 right-4 text-gray-400"><i
+                                                class="fa-regular fa-clock"></i> 10 آذر 1401</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section2 pt-6">
+                        <div id="indexslide2" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="uk-card uk-card-default rounded-md overflow-hidden">
+                                    <div class="slider2Picture uk-card-media-top">
+                                        <a href="#"><img src="./assets/img/1401070313152684826150674-359x250.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        <span class="text-gray-400"><i class="fa-regular fa-clock"></i> 10 آذر
+                                            1401</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="uk-card uk-card-default rounded-md overflow-hidden">
+                                    <div class="slider2Picture uk-card-media-top">
+                                        <a href="#"><img
+                                                src="./assets/img/2-Copy-Copy-Copy-Copy-Copy-Copy-Copy-8-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy_001-2-2-357x250.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        <span class="text-gray-400"><i class="fa-regular fa-clock"></i> 10 آذر
+                                            1401</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="uk-card uk-card-default rounded-md overflow-hidden">
+                                    <div class="slider2Picture uk-card-media-top">
+                                        <a href="#"><img src="./assets/img/IMG-20221129-WA0023-400x200.jpg" alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        <span class="text-gray-400"><i class="fa-regular fa-clock"></i> 10 آذر
+                                            1401</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="uk-card uk-card-default rounded-md overflow-hidden">
+                                    <div class="slider2Picture uk-card-media-top">
+                                        <a href="#"><img src="./assets/img/snow.jpg" alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        <span class="text-gray-400"><i class="fa-regular fa-clock"></i> 10 آذر
+                                            1401</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section3 pt-6">
+                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor"><span>اخبار داغ</span></h2>
+                        <div class="w-full bg-white rounded-md mt-6 mainShadow p-4">
+                            <div class="grid grid-cols-2 gap-4 items-center">
+                                <div class="col-span-1 hotNewsRight">
+                                    <a href="#"><img class="w-full object-fill rounded-md mb-3"
+                                            src="./assets/img/2-Copy-Copy-Copy-Copy-Copy-Copy-Copy-8-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy_001-2-2-357x250.jpg"
+                                            alt=""></a>
+                                    <h3 class="text-md leading-7"><a class="hover:text-mainColor" href="#">سوءقصد به جان
+                                            معاون صنایع عمومی و رئیس ستاد مبارزه با قاچاق
+                                            کالای وزارت صمت / محمد مهدی برادران در بخش مراقبت های ویژه بستری شد</a></h3>
+                                </div>
+                                <div class="col-span-1">
+                                    <ul class="hotNewsList">
+                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> وضعیت اضطراریِ تپۀ پیش از تاریخ در تهران</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> شمس‌الواعظین: ایران اینترنشنال تولید نفرت می‌کند/ بی‌بی‌سی…</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> ۱۰ تغییر مدیریتی ملی و استانی تا پایان ماه/معرفی "بذرپاش" به‌عنوان…</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> پژوهشگران دانشگاه "ییل" می‌گویند علت اصلی آلزایمر را کشف کرده‌اند</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> پیشکسوت استقلال درگذشت</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> صدور هشدار زرد مدیریت بحران مبنی بر احتمال یخبندان در استان…</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> درخواست باکو از ایران برای شفاف‌سازی درباره ادعای ورود غیرمجاز…</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> پژوهشگران دانشگاه "ییل" می‌گویند علت اصلی آلزایمر را کشف کرده‌اند</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> وضعیت اضطراریِ تپۀ پیش از تاریخ در تهران</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section4 pt-6">
+                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span>چند رسانه ای</span></h2>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="col-span-1 relative">
+                                <div class="absolute right-2 top-1 z-30"><i class="text-mainColor text-xl fa-solid fa-camera"></i></div>
+                                <div id="indexslide3" class="owl-carousel owl-theme rounded-md overflow-hidden">
+                                    <div class="item">
+                                        <a href="#" class="relative">
+                                            <img class="rounded-md" src="./assets/img/aban.jpg" alt="">
+                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3">عکس ماه - آبان ۱۴۰۱</h3>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="relative">
+                                            <img class="rounded-md" src="./assets/img/koshti.jpg" alt="">
+                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3">بیست‌ و دومین دوره مسابقات لیگ برتر کشتی آزاد کشور / علیرضا معصومی</h3>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="relative">
+                                            <img class="rounded-md" src="./assets/img/football.jpg" alt="">
+                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3">تمرین تیم ملی فوتبال/ روح‌اله وحدتی 
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-1 relative" dir="ltr">
+                                <div class="absolute right-2 top-1 z-30"><i class="text-mainColor text-xl fa-solid fa-video"></i></div>
+                                <div id="indexslide4" class="owl-carousel owl-theme rounded-md overflow-hidden">
+                                    <div class="item">
+                                        <a href="#" class="relative">
+                                            <img class="rounded-md" src="./assets/img/roodkhane.jpg" alt="">
+                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3 text-right">خشک شدن کامل رودخانه قزل اوزن/ احسان تقی بیگلو 
+                                            </h3>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="relative">
+                                            <img class="rounded-md" src="./assets/img/esteghlal.jpg" alt="">
+                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3 text-right">سوپرجام فوتبال ایران؛ تیم‌های استقلال - نساجی/ رحیم بنی اسد 
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </main>
-
-
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/uikit/js/uikit.min.js"></script>
     <script src="./assets/OwlCarousel/dist/owl.carousel.min.js"></script>
