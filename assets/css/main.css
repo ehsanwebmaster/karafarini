@@ -1,17 +1,105 @@
 a {
-    transition: all 0.3s;
-    text-decoration: none !important;
+  transition: all 0.3s;
+  text-decoration: none !important;
 }
 a:hover {
-    color: black;
+  color: black;
 }
 p {
-    text-align: justify;
-    line-height: 1.8;
+  text-align: justify;
+  line-height: 1.8;
 }
 :root {
-	--mainColor: #b21f01;
+  --mainColor: #b21f01;
 }
-body{
-    font-size: .9rem;
+body {
+  font-size: 0.9rem;
+  background-color: #f1f1f1;
+}
+.mainShadow {
+  box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: iransans;
+  font-weight: bold;
+}
+/* Header */
+.main-header {
+  box-shadow: rgb(0 0 0 / 10%) 1px 0 3px 4px;
+  background-color: #ffffffbb;
+  backdrop-filter: blur(15px);
+}
+.navbar > li {
+  position: relative;
+}
+.navbar > li > a {
+  padding: 2rem 0;
+}
+.navbar > li > ul {
+  position: absolute;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  top: 3rem;
+  border-radius: 5px;
+  transition: all 0.1s;
+}
+.navbar > li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 2rem;
+}
+.navbar > li > ul > li > a {
+  width: 100%;
+  padding: 0.3rem 0;
+  display: block;
+}
+/* Main */
+.sliderpix {
+  height: 22rem;
+}
+.btnRightLeft {
+  font-size: 1.5rem;
+  color: var(--mainColor);
+}
+.slider2Picture img {
+  height: 10rem;
+  object-fit: fill;
+}
+.uk-card-body {
+  padding: 1rem;
+}
+.uk-heading-line > ::after,
+.uk-heading-line > ::before {
+  border-bottom: calc(0.2px + 0.1em) solid #c1c1c1;
+}
+.hotNewsRight img {
+    height: 22rem;
+}
+.hotNewsList li{
+    border-bottom: 1px solid #dddcdc;
+    font-weight: bold;
+}
+.hotNewsList li:last-child{
+    border-bottom: 0px;
+}
+.hotNewsList li a{
+    padding: .8rem 0;
+    display: block;
+}
+#indexslide3 h3, #indexslide4 h3{
+    background-color: #0000009d;
+}
+#indexslide3 .owl-dots, #indexslide4 .owl-dots{
+    position: absolute;
+    left: 1rem;
+    top: 0;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: var(--mainColor);
 }
