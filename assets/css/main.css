@@ -1,3 +1,4 @@
+
 a {
   transition: all 0.3s;
   text-decoration: none !important;
@@ -72,7 +73,7 @@ h6 {
   height: 10rem;
   object-fit: fill;
 }
-.slider2Picture2 img{
+.slider2Picture2 img {
   height: 15rem;
 }
 .uk-card-body {
@@ -83,32 +84,42 @@ h6 {
   border-bottom: calc(0.2px + 0.1em) solid #c1c1c1;
 }
 .hotNewsRight img {
-    height: 22rem;
+  height: 22rem;
 }
-.hotNewsList li{
-    border-bottom: 1px solid #dddcdc;
-    font-weight: bold;
+.hotNewsList li {
+  border-bottom: 1px solid #dddcdc;
+  font-weight: bold;
 }
-.hotNewsList li:last-child{
-    border-bottom: 0px;
+.hotNewsList li:last-child {
+  border-bottom: 0px;
 }
-.hotNewsList li a{
-    padding: .8rem 0;
-    display: block;
+.hotNewsList li a {
+  padding: 0.8rem 0;
+  display: block;
 }
-#indexslide3 h3, #indexslide4 h3{
-    background-color: #0000009d;
+#indexslide3 h3,
+#indexslide4 h3 {
+  background-color: #0000009d;
 }
-#indexslide3 .owl-dots, #indexslide4 .owl-dots{
-    position: absolute;
-    left: 1rem;
-    top: 0;
+#indexslide3 .owl-dots,
+#indexslide4 .owl-dots {
+  position: absolute;
+  left: 1rem;
+  top: 0;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-    background: var(--mainColor);
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--mainColor);
 }
-.contentBoxMini img{
+.contentBoxMini img {
   width: 100%;
   height: 7rem;
   object-fit: fill;
+}
+/* Sidebar */
+.uk-heading-bullet::before {
+  border-right: calc(5px + 0.1em) solid var(--mainColor);
+}
+.sidebarNews ul li{
+  margin-top: 1rem;
 }

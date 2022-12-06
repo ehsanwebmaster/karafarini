@@ -108,3 +108,11 @@ $(".am-prev").click(function () {
   // Parameters has to be in square bracket '[]'
   owl.trigger("prev.owl.carousel", [300]);
 });
+//Sticky Sidebar
+var sidebar = new StickySidebar('.sidebar', {
+  containerSelector: '#main-content',
+  innerWrapperSelector: '.sidebar__inner',
+  topSpacing: 10,
+  bottomSpacing: 10,
+  minWidth: 1024,
+});
