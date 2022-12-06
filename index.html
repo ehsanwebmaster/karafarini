@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="font-iransans h-[2000px]">
+<body class="font-iransans h-[3000px]">
     <header class="header">
         <section class="bg-mainColor text-white py-2 hidden lg:block">
             <div class="container mx-auto sm:px-16 px-2">
@@ -73,7 +73,7 @@
     </header>
     <main class="pt-6">
         <div class="container mx-auto sm:px-16 px-1">
-            <div class="grid grid-cols-4">
+            <div class="grid grid-cols-4 gap-6">
                 <div class="col-span-3">
                     <section class="mainSlider w-full bg-white mainShadow rounded-md overflow-hidden relative">
                         <div class="btnRightLeft absolute left-4 bottom-3 z-30">
@@ -198,61 +198,90 @@
                                 </div>
                                 <div class="col-span-1">
                                     <ul class="hotNewsList">
-                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> وضعیت اضطراریِ تپۀ پیش از تاریخ در تهران</a></li>
-                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> شمس‌الواعظین: ایران اینترنشنال تولید نفرت می‌کند/ بی‌بی‌سی…</a></li>
-                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> ۱۰ تغییر مدیریتی ملی و استانی تا پایان ماه/معرفی "بذرپاش" به‌عنوان…</a></li>
-                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> پژوهشگران دانشگاه "ییل" می‌گویند علت اصلی آلزایمر را کشف کرده‌اند</a></li>
-                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> پیشکسوت استقلال درگذشت</a></li>
-                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> صدور هشدار زرد مدیریت بحران مبنی بر احتمال یخبندان در استان…</a></li>
-                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> درخواست باکو از ایران برای شفاف‌سازی درباره ادعای ورود غیرمجاز…</a></li>
-                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> پژوهشگران دانشگاه "ییل" می‌گویند علت اصلی آلزایمر را کشف کرده‌اند</a></li>
-                                        <li><a class="hover:text-mainColor" href="#"><i class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i> وضعیت اضطراریِ تپۀ پیش از تاریخ در تهران</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i
+                                                    class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i>
+                                                وضعیت اضطراریِ تپۀ پیش از تاریخ در تهران</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i
+                                                    class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i>
+                                                شمس‌الواعظین: ایران اینترنشنال تولید نفرت می‌کند/ بی‌بی‌سی…</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i
+                                                    class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i>
+                                                ۱۰ تغییر مدیریتی ملی و استانی تا پایان ماه/معرفی "بذرپاش" به‌عنوان…</a>
+                                        </li>
+                                        <li><a class="hover:text-mainColor" href="#"><i
+                                                    class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i>
+                                                پژوهشگران دانشگاه "ییل" می‌گویند علت اصلی آلزایمر را کشف کرده‌اند</a>
+                                        </li>
+                                        <li><a class="hover:text-mainColor" href="#"><i
+                                                    class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i>
+                                                پیشکسوت استقلال درگذشت</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i
+                                                    class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i>
+                                                صدور هشدار زرد مدیریت بحران مبنی بر احتمال یخبندان در استان…</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i
+                                                    class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i>
+                                                درخواست باکو از ایران برای شفاف‌سازی درباره ادعای ورود غیرمجاز…</a></li>
+                                        <li><a class="hover:text-mainColor" href="#"><i
+                                                    class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i>
+                                                پژوهشگران دانشگاه "ییل" می‌گویند علت اصلی آلزایمر را کشف کرده‌اند</a>
+                                        </li>
+                                        <li><a class="hover:text-mainColor" href="#"><i
+                                                    class="text-mainColor fa-solid fa-caret-left float-right mt-1 mr-1 ml-2"></i>
+                                                وضعیت اضطراریِ تپۀ پیش از تاریخ در تهران</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <section class="section4 pt-6">
-                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span>چند رسانه ای</span></h2>
+                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span>چند رسانه ای</span>
+                        </h2>
                         <div class="grid grid-cols-2 gap-4">
                             <div class="col-span-1 relative">
-                                <div class="absolute right-2 top-1 z-30"><i class="text-mainColor text-xl fa-solid fa-camera"></i></div>
+                                <div class="absolute right-2 top-1 z-30"><i
+                                        class="text-mainColor text-xl fa-solid fa-camera"></i></div>
                                 <div id="indexslide3" class="owl-carousel owl-theme rounded-md overflow-hidden">
                                     <div class="item">
                                         <a href="#" class="relative">
                                             <img class="rounded-md" src="./assets/img/aban.jpg" alt="">
-                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3">عکس ماه - آبان ۱۴۰۱</h3>
+                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3">عکس ماه -
+                                                آبان ۱۴۰۱</h3>
                                         </a>
                                     </div>
                                     <div class="item">
                                         <a href="#" class="relative">
                                             <img class="rounded-md" src="./assets/img/koshti.jpg" alt="">
-                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3">بیست‌ و دومین دوره مسابقات لیگ برتر کشتی آزاد کشور / علیرضا معصومی</h3>
+                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3">بیست‌ و
+                                                دومین دوره مسابقات لیگ برتر کشتی آزاد کشور / علیرضا معصومی</h3>
                                         </a>
                                     </div>
                                     <div class="item">
                                         <a href="#" class="relative">
                                             <img class="rounded-md" src="./assets/img/football.jpg" alt="">
-                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3">تمرین تیم ملی فوتبال/ روح‌اله وحدتی 
+                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3">تمرین تیم
+                                                ملی فوتبال/ روح‌اله وحدتی
                                             </h3>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-span-1 relative" dir="ltr">
-                                <div class="absolute right-2 top-1 z-30"><i class="text-mainColor text-xl fa-solid fa-video"></i></div>
+                                <div class="absolute right-2 top-1 z-30"><i
+                                        class="text-mainColor text-xl fa-solid fa-video"></i></div>
                                 <div id="indexslide4" class="owl-carousel owl-theme rounded-md overflow-hidden">
                                     <div class="item">
                                         <a href="#" class="relative">
                                             <img class="rounded-md" src="./assets/img/roodkhane.jpg" alt="">
-                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3 text-right">خشک شدن کامل رودخانه قزل اوزن/ احسان تقی بیگلو 
+                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3 text-right">
+                                                خشک شدن کامل رودخانه قزل اوزن/ احسان تقی بیگلو
                                             </h3>
                                         </a>
                                     </div>
                                     <div class="item">
                                         <a href="#" class="relative">
                                             <img class="rounded-md" src="./assets/img/esteghlal.jpg" alt="">
-                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3 text-right">سوپرجام فوتبال ایران؛ تیم‌های استقلال - نساجی/ رحیم بنی اسد 
+                                            <h3 class="absolute z-30 bottom-0 right-0 text-white w-full p-3 text-right">
+                                                سوپرجام فوتبال ایران؛ تیم‌های استقلال - نساجی/ رحیم بنی اسد
                                             </h3>
                                         </a>
                                     </div>
@@ -260,7 +289,166 @@
                             </div>
                         </div>
                     </section>
+                    <section class="section5 pt-6">
+                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span>اقتصادی</span></h2>
+                        <div class="grid grid-cols-4 gap-4">
+                            <div class="col-span-1">
+                                <div class="uk-card uk-card-default rounded-md overflow-hidden">
+                                    <div class="slider2Picture uk-card-media-top">
+                                        <a href="#"><img src="./assets/img/IMG-20221129-WA0023-400x200.jpg" alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        <span class="text-gray-400"><i class="fa-regular fa-clock"></i> 10 آذر
+                                            1401</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-1">
+                                <div class="uk-card uk-card-default rounded-md overflow-hidden">
+                                    <div class="slider2Picture uk-card-media-top">
+                                        <a href="#"><img src="./assets/img/2-Copy-Copy-Copy-Copy-Copy-Copy-Copy-8-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy_001-2-2-357x250.jpg" alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        <span class="text-gray-400"><i class="fa-regular fa-clock"></i> 10 آذر
+                                            1401</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-1">
+                                <div class="uk-card uk-card-default rounded-md overflow-hidden">
+                                    <div class="slider2Picture uk-card-media-top">
+                                        <a href="#"><img src="./assets/img/aban.jpg" alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        <span class="text-gray-400"><i class="fa-regular fa-clock"></i> 10 آذر
+                                            1401</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-1">
+                                <div class="uk-card uk-card-default rounded-md overflow-hidden">
+                                    <div class="slider2Picture uk-card-media-top">
+                                        <a href="#"><img src="./assets/img/koshti.jpg" alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        <span class="text-gray-400"><i class="fa-regular fa-clock"></i> 10 آذر
+                                            1401</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section5 pt-6">
+                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span>کار آفرینی</span></h2>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="col-span-1">
+                                <div class="uk-card uk-card-default rounded-md overflow-hidden">
+                                    <div class="slider2Picture slider2Picture2 uk-card-media-top">
+                                        <a href="#"><img src="./assets/img/2-Copy-Copy-Copy-Copy-Copy-Copy-Copy-8-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy_001-2-2-357x250.jpg" alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        <span class="text-gray-400"><i class="fa-regular fa-clock"></i> 10 آذر
+                                            1401</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-1">
+                                <div class="h-full w-full flex flex-col justify-between">
+                                    <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <div class="col-span-1">
+                                                <a href="#"><img src="./assets/img/esteghlal.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-span-1 flex items-center">
+                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <div class="col-span-1">
+                                                <a href="#"><img src="./assets/img/football.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-span-1 flex items-center">
+                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <div class="col-span-1">
+                                                <a href="#"><img src="./assets/img/aban.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-span-1 flex items-center">
+                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-1">
+                                <div class="h-full w-full flex flex-col justify-between">
+                                    <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <div class="col-span-1">
+                                                <a href="#"><img src="./assets/img/IMG-20221129-WA0023-400x200.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-span-1 flex items-center">
+                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <div class="col-span-1">
+                                                <a href="#"><img src="./assets/img/snow.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-span-1 flex items-center">
+                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <div class="col-span-1">
+                                                <a href="#"><img src="./assets/img/roodkhane.jpg" alt=""></a>
+                                            </div>
+                                            <div class="col-span-1 flex items-center">
+                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+
+                <aside class="col-span-1">
+                    <section class="sidebarBanners">
+                        <ul class="flex flex-col">
+                            <li class="mb-2"><a href="#"><img class="w-full" src="./assets/img/banner1.jpg" alt=""></a></li>
+                            <li class="mb-2"><a href="#"><img class="w-full" src="./assets/img/banner2.jpg" alt=""></a></li>
+                            <li class="mb-2"><a href="#"><img class="w-full" src="./assets/img/banner3.gif" alt=""></a></li>
+                        </ul>
+                    </section>
+                </aside>
             </div>
         </div>
     </main>
