@@ -81,7 +81,8 @@ h6 {
 }
 .uk-heading-line > ::after,
 .uk-heading-line > ::before {
-  border-bottom: calc(0.2px + 0.1em) solid #c1c1c1;
+  /* border-bottom: calc(0.2px + 0.1em) solid #c1c1c1; */
+  border-bottom: calc(0.2px + 0.2em) solid #b21f01;
 }
 .hotNewsRight img {
   height: 22rem;
