@@ -1,4 +1,3 @@
-
 a {
   transition: all 0.3s;
   text-decoration: none !important;
@@ -37,9 +36,13 @@ h6 {
 }
 .navbar > li {
   position: relative;
+  border-left: 1px solid #939393bb;
+}
+.navbar > li:last-child {
+  border-left: 0;
 }
 .navbar > li > a {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 .navbar > li > ul {
   position: absolute;
@@ -59,6 +62,17 @@ h6 {
   width: 100%;
   padding: 0.3rem 0;
   display: block;
+}
+.uk-search-default .uk-search-input {
+  height: auto !important;
+  border: none;
+  background-color: #741400;
+  padding: 3px;
+  border-radius: 15px;
+}
+.uk-search-default .uk-search-input::placeholder,
+.searchbox span {
+  color: #f1f1f1 !important;
 }
 /* Main */
 .sliderpix {
@@ -121,6 +135,16 @@ h6 {
 .uk-heading-bullet::before {
   border-right: calc(5px + 0.1em) solid var(--mainColor);
 }
-.sidebarNews ul li{
+.sidebarNews ul li {
   margin-top: 1rem;
+}
+/* Fotter */
+.footer-menu > li {
+  border-left: 1px solid #dddcdc;
+}
+.footer-menu > li:last-child{
+  border-left: 0;
+}
+.footer-menu > li>a{
+  padding: 0 .8rem;
 }

@@ -24,12 +24,22 @@
     <header class="header">
         <section class="bg-mainColor text-white py-2 hidden lg:block">
             <div class="container mx-auto sm:px-16 px-2">
-                <ul class="flex justify-start space-x-5 space-x-reverse text-[0.8rem]">
-                    <li><a class="hover:text-white" href="#">خانه</a></li>
-                    <li><a class="hover:text-white" href="#">اخبار جدید و اطلاع رسانی</a></li>
-                    <li><a class="hover:text-white" href="#">صادرات و واردات</a></li>
-                    <li><a class="hover:text-white" href="#">رویدادهای ویژه</a></li>
-                </ul>
+                <div class="grid grid-cols-4 items-center">
+                    <div class="col-span-3">
+                        <ul class="flex justify-start space-x-5 space-x-reverse text-[0.8rem]">
+                            <li><a class="hover:text-white" href="#">خانه</a></li>
+                            <li><a class="hover:text-white" href="#">اخبار جدید و اطلاع رسانی</a></li>
+                            <li><a class="hover:text-white" href="#">صادرات و واردات</a></li>
+                            <li><a class="hover:text-white" href="#">رویدادهای ویژه</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-1">
+                        <form class="searchbox uk-search uk-search-default float-left">
+                            <span uk-search-icon></span>
+                            <input class="uk-search-input text-white" type="search" placeholder="جستجو کنید ..." aria-label="Search">
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="main-header py-2 z-50" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
@@ -41,7 +51,7 @@
                     </div>
                     <!-- Main menus  -->
                     <div class="col-span-10">
-                        <ul class="navbar flex justify-center space-x-6 space-x-reverse font-bold">
+                        <ul class="navbar flex justify-center font-bold">
                             <li><a href="#">خانه</a></li>
                             <li><a href="#">اخبارجدید و اطلاع رسانی <i class="fa-solid fa-caret-down"></i></a>
                                 <ul class="bg-[#e3e3e3] min-w-full p-2">
@@ -63,8 +73,8 @@
                     <!-- Left of Header  -->
                     <div class="col-span-1">
                         <ul class="flex justify-end space-x-3 space-x-reverse text-xl">
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                            <!-- <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-bars"></i></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -185,7 +195,7 @@
                         </div>
                     </section>
                     <section class="section3 pt-6">
-                        <h2 class="uk-heading-line uk-text-right text-2xl font-bold text-mainColor"><span>اخبار داغ</span></h2>
+                        <h2 class="uk-heading-line uk-text-right text-xl font-bold text-mainColor"><span><i class="fa-solid fa-quote-right"></i> اخبار داغ</span></h2>
                         <div class="w-full bg-white rounded-md mt-6 mainShadow p-4">
                             <div class="grid grid-cols-2 gap-4 items-center">
                                 <div class="col-span-1 hotNewsRight">
@@ -234,7 +244,7 @@
                         </div>
                     </section>
                     <section class="section4 pt-6">
-                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span>چند رسانه ای</span>
+                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span><i class="fa-solid fa-quote-right"></i> چند رسانه ای</span>
                         </h2>
                         <div class="grid grid-cols-2 gap-4">
                             <div class="col-span-1 relative">
@@ -290,7 +300,7 @@
                         </div>
                     </section>
                     <section class="section5 pt-6">
-                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span>اقتصادی</span></h2>
+                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span><i class="fa-solid fa-quote-right"></i> اقتصادی</span></h2>
                         <div class="grid grid-cols-4 gap-4">
                             <div class="col-span-1">
                                 <div class="uk-card uk-card-default rounded-md overflow-hidden">
@@ -349,7 +359,7 @@
                         </div>
                     </section>
                     <section class="section5 pt-6">
-                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span>کار آفرینی</span>
+                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span><i class="fa-solid fa-quote-right"></i> کار آفرینی</span>
                         </h2>
                         <div class="grid grid-cols-3 gap-4">
                             <div class="col-span-1">
@@ -531,8 +541,26 @@
             </div>
         </div>
     </main>
-    <footer class="footer mt-6 w-full h-36 bg-slate-500">
-
+    <footer class="footer mt-6 w-full py-6 bg-mainColor">
+        <div class="container mx-auto sm:px-16 px-1">
+            <ul class="flex flex-row justify-center space-x-5 space-x-reverse w-full">
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-solid fa-rss"></i></a></li>
+            </ul>
+            <nav class="w-full">
+                <ul class="flex flex-row justify-center mt-4 footer-menu mb-6">
+                    <li><a class="text-white hover:text-white" href="#">خط و مشی سازمانی</a></li>
+                    <li><a class="text-white hover:text-white" href="#">ارتباط باما</a></li>
+                    <li><a class="text-white hover:text-white" href="#">فروشگاه کار آفرینی</a></li>
+                    <li><a class="text-white hover:text-white" href="#">درباره ما</a></li>
+                </ul>
+            </nav>
+            <p class="w-full text-center text-white">این وبسایت توسط کار و کار آفرینی طراحی شده و کلیه حقوق آن محفوظ است.</p>
+        </div>
     </footer>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/uikit/js/uikit.min.js"></script>
