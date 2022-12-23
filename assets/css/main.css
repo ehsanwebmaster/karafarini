@@ -167,3 +167,18 @@ h6 {
   font-size: 1.2rem;
   padding: 1rem 0;
 }
+/* startup */
+.startupBanner{
+  height: 15rem;
+  background-image: url("./../img/startup.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.banner-mask{
+  background-color: #0000006c;
+}
+.statupPicture {
+  height: 12rem !important;
+  object-fit: cover !important;
+}
