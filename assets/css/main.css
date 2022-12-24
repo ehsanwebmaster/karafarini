@@ -80,7 +80,12 @@ h6 {
 }
 .btnRightLeft {
   font-size: 1.5rem;
-  color: var(--mainColor);
+}
+.btnRightLeft button{
+  background-color: var(--mainColor);
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
 }
 .slider2Picture img {
   width: 100%;
@@ -148,6 +153,9 @@ h6 {
 .footer-menu > li > a {
   padding: 0 0.8rem;
 }
+.namad img{
+  max-width: 3rem;
+}
 /* Single */
 .single-content h1 {
   line-height: 2;
@@ -181,4 +189,14 @@ h6 {
 .statupPicture {
   height: 12rem !important;
   object-fit: cover !important;
+}
+.startups{
+  width: 100%;
+}
+.startups td, .startups th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.startups tbody tr:nth-child(2n){
+  background-color: #f6f6f6;
 }
