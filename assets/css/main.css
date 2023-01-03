@@ -63,25 +63,36 @@ h6 {
   padding: 0.3rem 0;
   display: block;
 }
-.uk-search-default .uk-search-input {
+.searchbd .uk-search-default .uk-search-input {
   height: auto !important;
   border: none;
   background-color: #741400;
   padding: 3px;
   border-radius: 15px;
 }
-.uk-search-default .uk-search-input::placeholder,
+.searchbd .uk-search-default .uk-search-input::placeholder,
 .searchbox span {
   color: #f1f1f1 !important;
 }
-/* Main */
-.sliderpix {
-  height: 22rem;
+.offcanvasSearchbhg .uk-search-default .uk-search-input {
+  height: auto !important;
+  border: none;
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 15px;
 }
+.offcanvasSearchbhg .uk-search-default .uk-search-input::placeholder,
+.searchbox span {
+  color: #000000 !important;
+}
+.uk-search .uk-search-icon:not(a):not(button):not(input){
+  color: white !important;
+}
+/* Main */
 .btnRightLeft {
   font-size: 1.5rem;
 }
-.btnRightLeft button{
+.btnRightLeft button {
   background-color: var(--mainColor);
   color: #ffffff;
   width: 30px;
@@ -153,7 +164,7 @@ h6 {
 .footer-menu > li > a {
   padding: 0 0.8rem;
 }
-.namad img{
+.namad img {
   max-width: 3rem;
 }
 /* Single */
@@ -164,39 +175,46 @@ h6 {
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
 }
-.authorDetails li{
+.authorDetails li {
   border-left: 1px solid #e0e0e0;
-  padding: .3rem 0.5rem;
+  padding: 0.3rem 0.5rem;
 }
-#main-content article p{
+#main-content article p {
   line-height: 2;
 }
-#main-content article h1, #main-content article h2, #main-content article h3, #main-content article h4, #main-content article h5, #main-content article h6{
+#main-content article h1,
+#main-content article h2,
+#main-content article h3,
+#main-content article h4,
+#main-content article h5,
+#main-content article h6 {
   font-size: 1.2rem;
   padding: 1rem 0;
 }
 /* startup */
-.startupBanner{
+.startupBanner {
   height: 15rem;
   background-image: url("./../img/startup.jpg");
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
-.banner-mask{
+.banner-mask {
   background-color: #0000006c;
 }
 .statupPicture {
   height: 12rem !important;
   object-fit: cover !important;
 }
-.startups{
+.startups {
   width: 100%;
 }
-.startups td, .startups th {
+.startups td,
+.startups th {
   border: 1px solid #ddd;
   padding: 8px;
 }
-.startups tbody tr:nth-child(2n){
+.startups tbody tr:nth-child(2n) {
   background-color: #f6f6f6;
 }
+/* Responsive */

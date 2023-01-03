@@ -21,7 +21,7 @@
 </head>
 
 <body class="font-iransans">
-    <header class="header">
+    <header class="header border-t-4 border-mainColor lg:border-t-0">
         <section class="bg-mainColor text-white py-2 hidden lg:block">
             <div class="container mx-auto sm:px-16 px-2">
                 <div class="grid grid-cols-4 items-center">
@@ -33,24 +33,31 @@
                             <li><a class="hover:text-white" href="#">رویدادهای ویژه</a></li>
                         </ul>
                     </div>
-                    <div class="col-span-1">
+                    <div class="col-span-1 searchbd">
                         <form class="searchbox uk-search uk-search-default float-left">
                             <span uk-search-icon></span>
-                            <input class="uk-search-input text-white" type="search" placeholder="جستجو کنید ..." aria-label="Search">
+                            <input class="uk-search-input text-white" type="search" placeholder="جستجو کنید ..."
+                                aria-label="Search">
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="main-header py-2 z-50" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+        <section class="main-header py-2 z-50"
+            uk-sticky="show-on-up: true; animation: uk-animation-slide-top; media: 640;">
             <div class="container mx-auto sm:px-16 px-1">
                 <div class="grid grid-cols-12 gap-3 items-center">
                     <!-- logo -->
-                    <div class="col-span-1">
+                    <div class="col-span-3 sm:col-span-2 xl:col-span-1">
                         <a href="#"><img class="w-full px-4" src="./assets/img/logo.png" alt=""></a>
                     </div>
+                    <!-- mobileMenu -->
+                    <div class="col-span-9 sm:col-span-10 2xl:hidden text-end">
+                        <a href="#" class="pl-4 text-xl" uk-toggle="target: #offcanvas-push"><i
+                                class="fa-solid fa-bars"></i></a>
+                    </div>
                     <!-- Main menus  -->
-                    <div class="col-span-10">
+                    <div class="col-span-11 hidden 2xl:block">
                         <ul class="navbar flex justify-center font-bold">
                             <li><a href="#">خانه</a></li>
                             <li><a href="#">اخبارجدید و اطلاع رسانی <i class="fa-solid fa-caret-down"></i></a>
@@ -71,21 +78,39 @@
                         </ul>
                     </div>
                     <!-- Left of Header  -->
-                    <div class="col-span-1">
+                    <!-- <div class="col-span-1 hidden">
                         <ul class="flex justify-end space-x-3 space-x-reverse text-xl">
-                            <!-- <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-bars"></i></a></li> -->
+                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
+        <!-- offCanvasMenu -->
+        <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <div class="w-full float-right offcanvasSearchbhg">
+                    <form class="searchbox2 uk-search uk-search-default float-left my-4 w-full">
+                        <input class="uk-search-input offcanvasSearch w-full" type="search" placeholder="جستجو کنید ..."
+                            aria-label="Search">
+                    </form>
+                </div>
+                <ul class="flex flex-col gap-3 w-full float-right">
+                    <li><a href="#">صفحه نخست</a></li>
+                    <li><a href="#">تماس باما</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- offCanvasMenu -->
     </header>
     <main class="pt-6">
         <div class="container mx-auto sm:px-16 px-1">
             <div class="grid grid-cols-4 gap-6">
-                <div id="main-content" class="col-span-3">
-                    <section class="mainSlider w-full bg-white mainShadow rounded-[2rem] overflow-hidden relative">
+                <div id="main-content" class="xl:col-span-3 col-span-4">
+                    <section class="mainSlider w-full bg-white mainShadow rounded-[1rem] overflow-hidden relative">
                         <div class="btnRightLeft absolute left-4 bottom-3 z-30">
                             <button class="am-next rounded-xl"><i class="fa-solid fa-caret-right"></i></button>
                             <button class="am-prev rounded-xl"><i class="fa-solid fa-caret-left"></i></button>
@@ -93,17 +118,18 @@
                         <div id="indexslide" class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="grid grid-cols-4 gap-3">
-                                    <div class="col-span-2 sliderpix">
+                                    <div class="md:col-span-2 col-span-4 sliderpix h-[15rem] lg:h-[22rem]">
                                         <a href="#"><img class="w-full h-full object-fill"
                                                 src="./assets/img/2-Copy-Copy-Copy-Copy-Copy-Copy-Copy-8-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy-Copy_001-2-2-357x250.jpg"
                                                 alt=""></a>
                                     </div>
-                                    <div class="col-span-2 p-4 relative">
+                                    <div class="md:col-span-2 col-span-4 p-4 relative pb-12 sm-[pb-4]">
                                         <h3 class="leading-7 mb-3 text-lg"><a class="hover:text-mainColor"
                                                 href="#">سوءقصد به جان معاون صنایع عمومی و رئیس ستاد مبارزه با قاچاق
                                                 کالای وزارت صمت / محمد مهدی برادران در بخش مراقبت های ویژه بستری شد</a>
                                         </h3>
-                                        <p>سوءقصد به جان معاون وزارت صمت/ محمد مهدی برادران در بخش مراقبت های ویژه بستری
+                                        <p class="hidden lg:block">سوءقصد به جان معاون وزارت صمت/ محمد مهدی برادران در
+                                            بخش مراقبت های ویژه بستری
                                             شد. محمد مهدی براداران معاون صنایع عمومی وزارت صمت ، زمانی که قصد عزیمت به
                                             منزل را داشته است ، از سوی فرد یا افراد ناشناس مورد سوء قصد قرار گرفته است.
                                             بر اساس اطلاعات به دست آمده، این اتفاق […]
@@ -115,15 +141,16 @@
                             </div>
                             <div class="item">
                                 <div class="grid grid-cols-4 gap-3">
-                                    <div class="col-span-2 sliderpix">
+                                    <div class="md:col-span-2 col-span-4 sliderpix h-[15rem] lg:h-[22rem]">
                                         <a href="#"><img class="w-full h-full object-fill"
                                                 src="./assets/img/IMG-20221129-WA0023-400x200.jpg" alt=""></a>
                                     </div>
-                                    <div class="col-span-2 p-4 relative">
+                                    <div class="md:col-span-2 col-span-4 p-4 relative pb-12 sm-[pb-4]">
                                         <h3 class="leading-7 mb-3 text-lg"><a class="hover:text-mainColor" href="#">نشست
                                                 روسای سازمان بسیج اصناف کشور و تهران بزرگ با رئیس اتاق اصناف تهران
                                                 برگزار شد</a></h3>
-                                        <p>*نشست روسای سازمان بسیج اصناف کشور و تهران بزرگ با رئیس اتاق اصناف تهران
+                                        <p class="hidden lg:block">*نشست روسای سازمان بسیج اصناف کشور و تهران بزرگ با
+                                            رئیس اتاق اصناف تهران
                                             برگزار شد* 🔸نشست دکتر غلامرضا حسن پور رئیس سازمان بسیج اصناف، بازاریان و
                                             فعالان اقتصادی کشور، سرهنگ نعمت کاکاوند رئیس سازمان بسیج اصناف، بازاریان و
                                             فعالان اقتصادی تهران بزرگ و حجت الاسلام ناسخی مسئول فقه و بازار بسیج اصناف
@@ -135,7 +162,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="section2 pt-6">
+                    <section class="section2 pt-6 hidden md:block">
                         <div id="indexslide2" class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="uk-card uk-card-default rounded-md overflow-hidden">
@@ -194,9 +221,55 @@
                             </div>
                         </div>
                     </section>
+                    <!-- Section2 for mobile
+                    This section just show in mobile. This may be exact similar to Section2 -->
+                    <section class="section2 pt-6 md:hidden">
+                        <div class="col-span-1">
+                            <div class="h-full w-full flex flex-col justify-between">
+                                <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden mb-3">
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div class="col-span-1">
+                                            <a href="#"><img src="./assets/img/esteghlal.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-span-1 flex items-center">
+                                            <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود
+                                                    منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden mb-3">
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div class="col-span-1">
+                                            <a href="#"><img src="./assets/img/football.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-span-1 flex items-center">
+                                            <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود
+                                                    منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden mb-3">
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div class="col-span-1">
+                                            <a href="#"><img src="./assets/img/aban.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-span-1 flex items-center">
+                                            <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود
+                                                    منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section2 for mobile -->
                     <section class="section3 pt-6">
-                        <h2 class="uk-heading-line uk-text-right text-xl font-bold text-mainColor"><span><i class="fa-solid fa-quote-right"></i> اخبار داغ</span></h2>
-                        <div class="w-full bg-white rounded-md mt-6 mainShadow p-4">
+                        <h2 class="uk-heading-line uk-text-right text-xl font-bold text-mainColor"><span><i
+                                    class="fa-solid fa-quote-right"></i> اخبار داغ</span></h2>
+                        <div class="w-full bg-white rounded-md mt-6 mainShadow p-4 hidden lg:block">
                             <div class="grid grid-cols-2 gap-4 items-center">
                                 <div class="col-span-1 hotNewsRight">
                                     <a href="#"><img class="w-full object-fill rounded-md mb-3"
@@ -242,12 +315,57 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Section3 for mobile
+                    This section just show in mobile. This may be exact similar to Section3 -->
+                        <div class="col-span-1 lg:hidden mt-4">
+                            <div class="h-full w-full flex flex-col justify-between">
+                                <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden mb-3">
+                                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                                        <div class="col-span-1">
+                                            <a href="#"><img src="./assets/img/esteghlal.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-span-1 sm:col-span-2 flex items-center">
+                                            <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود
+                                                    منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden mb-3">
+                                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                                        <div class="col-span-1">
+                                            <a href="#"><img src="./assets/img/football.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-span-1 sm:col-span-2 flex items-center">
+                                            <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود
+                                                    منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden mb-3">
+                                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                                        <div class="col-span-1">
+                                            <a href="#"><img src="./assets/img/aban.jpg" alt=""></a>
+                                        </div>
+                                        <div class="col-span-1 sm:col-span-2 flex items-center">
+                                            <h3 class="leading-7 mb-3"><a class="hover:text-mainColor" href="#">داوود
+                                                    منظور
+                                                    رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section3 for mobile
+                    This section just show in mobile. This may be exact similar to Section3 -->
                     </section>
                     <section class="section4 pt-6">
-                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span><i class="fa-solid fa-quote-right"></i> چند رسانه ای</span>
+                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span><i
+                                    class="fa-solid fa-quote-right"></i> چند رسانه ای</span>
                         </h2>
                         <div class="grid grid-cols-2 gap-4">
-                            <div class="col-span-1 relative">
+                            <div class="col-span-2 lg:col-span-1 relative">
                                 <div class="absolute right-2 top-1 z-30"><i
                                         class="text-mainColor text-xl fa-solid fa-camera"></i></div>
                                 <div id="indexslide3" class="owl-carousel owl-theme rounded-md overflow-hidden">
@@ -275,7 +393,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-1 relative" dir="ltr">
+                            <div class="col-span-2 lg:col-span-1 relative" dir="ltr">
                                 <div class="absolute right-2 top-1 z-30"><i
                                         class="text-mainColor text-xl fa-solid fa-video"></i></div>
                                 <div id="indexslide4" class="owl-carousel owl-theme rounded-md overflow-hidden">
@@ -300,9 +418,10 @@
                         </div>
                     </section>
                     <section class="section5 pt-6">
-                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span><i class="fa-solid fa-quote-right"></i> اقتصادی</span></h2>
+                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span><i
+                                    class="fa-solid fa-quote-right"></i> اقتصادی</span></h2>
                         <div class="grid grid-cols-4 gap-4">
-                            <div class="col-span-1">
+                            <div class="col-span-2 lg:col-span-1">
                                 <div class="uk-card uk-card-default rounded-md overflow-hidden">
                                     <div class="slider2Picture uk-card-media-top">
                                         <a href="#"><img src="./assets/img/IMG-20221129-WA0023-400x200.jpg" alt=""></a>
@@ -315,7 +434,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-1">
+                            <div class="col-span-2 lg:col-span-1">
                                 <div class="uk-card uk-card-default rounded-md overflow-hidden">
                                     <div class="slider2Picture uk-card-media-top">
                                         <a href="#"><img
@@ -330,7 +449,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-1">
+                            <div class="col-span-2 lg:col-span-1">
                                 <div class="uk-card uk-card-default rounded-md overflow-hidden">
                                     <div class="slider2Picture uk-card-media-top">
                                         <a href="#"><img src="./assets/img/aban.jpg" alt=""></a>
@@ -343,7 +462,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-1">
+                            <div class="col-span-2 lg:col-span-1">
                                 <div class="uk-card uk-card-default rounded-md overflow-hidden">
                                     <div class="slider2Picture uk-card-media-top">
                                         <a href="#"><img src="./assets/img/koshti.jpg" alt=""></a>
@@ -359,10 +478,11 @@
                         </div>
                     </section>
                     <section class="section5 pt-6">
-                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span><i class="fa-solid fa-quote-right"></i> کار آفرینی</span>
+                        <h2 class="uk-heading-line uk-text-right text-xl text-mainColor mb-6"><span><i
+                                    class="fa-solid fa-quote-right"></i> کار آفرینی</span>
                         </h2>
                         <div class="grid grid-cols-3 gap-4">
-                            <div class="col-span-1">
+                            <div class="col-span-1 hidden lg:block">
                                 <div class="uk-card uk-card-default rounded-md overflow-hidden">
                                     <div class="slider2Picture slider2Picture2 uk-card-media-top">
                                         <a href="#"><img
@@ -377,39 +497,39 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-1">
-                                <div class="h-full w-full flex flex-col justify-between">
+                            <div class="col-span-3 lg:col-span-1">
+                                <div class="h-full w-full flex flex-col justify-between gap-3">
                                     <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
-                                        <div class="grid grid-cols-2 gap-3">
+                                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                             <div class="col-span-1">
                                                 <a href="#"><img src="./assets/img/esteghlal.jpg" alt=""></a>
                                             </div>
-                                            <div class="col-span-1 flex items-center">
-                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor"
+                                            <div class="col-span-1 sm:col-span-2 flex items-center">
+                                                <h3 class="leading-7 mb-3 pl-1"><a class="hover:text-mainColor"
                                                         href="#">داوود منظور
                                                         رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
-                                        <div class="grid grid-cols-2 gap-3">
+                                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                             <div class="col-span-1">
                                                 <a href="#"><img src="./assets/img/football.jpg" alt=""></a>
                                             </div>
-                                            <div class="col-span-1 flex items-center">
-                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor"
+                                            <div class="col-span-1 sm:col-span-2 flex items-center">
+                                                <h3 class="leading-7 mb-3 pl-1"><a class="hover:text-mainColor"
                                                         href="#">داوود منظور
                                                         رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
-                                        <div class="grid grid-cols-2 gap-3">
+                                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                             <div class="col-span-1">
                                                 <a href="#"><img src="./assets/img/aban.jpg" alt=""></a>
                                             </div>
-                                            <div class="col-span-1 flex items-center">
-                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor"
+                                            <div class="col-span-1 sm:col-span-2 flex items-center">
+                                                <h3 class="leading-7 mb-3 pl-1"><a class="hover:text-mainColor"
                                                         href="#">داوود منظور
                                                         رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
                                             </div>
@@ -417,40 +537,40 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-1">
-                                <div class="h-full w-full flex flex-col justify-between">
+                            <div class="col-span-3 lg:col-span-1">
+                                <div class="h-full w-full flex flex-col justify-between gap-3">
                                     <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
-                                        <div class="grid grid-cols-2 gap-3">
+                                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                             <div class="col-span-1">
                                                 <a href="#"><img src="./assets/img/IMG-20221129-WA0023-400x200.jpg"
                                                         alt=""></a>
                                             </div>
-                                            <div class="col-span-1 flex items-center">
-                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor"
+                                            <div class="col-span-1 sm:col-span-2 flex items-center">
+                                                <h3 class="leading-7 mb-3 pl-1"><a class="hover:text-mainColor"
                                                         href="#">داوود منظور
                                                         رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
-                                        <div class="grid grid-cols-2 gap-3">
+                                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                             <div class="col-span-1">
                                                 <a href="#"><img src="./assets/img/snow.jpg" alt=""></a>
                                             </div>
-                                            <div class="col-span-1 flex items-center">
-                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor"
+                                            <div class="col-span-1 sm:col-span-2 flex items-center">
+                                                <h3 class="leading-7 mb-3 pl-1"><a class="hover:text-mainColor"
                                                         href="#">داوود منظور
                                                         رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="contentBoxMini bg-white w-full rounded-md overflow-hidden">
-                                        <div class="grid grid-cols-2 gap-3">
+                                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                             <div class="col-span-1">
                                                 <a href="#"><img src="./assets/img/roodkhane.jpg" alt=""></a>
                                             </div>
-                                            <div class="col-span-1 flex items-center">
-                                                <h3 class="leading-7 mb-3"><a class="hover:text-mainColor"
+                                            <div class="col-span-1 sm:col-span-2 flex items-center">
+                                                <h3 class="leading-7 mb-3 pl-1"><a class="hover:text-mainColor"
                                                         href="#">داوود منظور
                                                         رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</a></h3>
                                             </div>
@@ -459,10 +579,13 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Use this part for mobile section -->
+
+                        <!-- Use this part for mobile section -->
                     </section>
                 </div>
 
-                <aside class="col-span-1 sidebar w-full m-0 p-0">
+                <aside class="col-span-1 sidebar w-full m-0 p-0 hidden xl:block">
                     <div class="sidebar__inner">
                         <section class="sidebarBanners">
                             <ul class="flex flex-col">
@@ -479,60 +602,70 @@
                                 <h2 class="uk-heading-bullet mb-6">آخرین اخبار</h2>
                                 <ul>
                                     <li><a href="#">
-                                        <div class="grid grid-cols-4 items-center">
-                                            <div class="col-span-1 flex flex-col text-center items-center rounded-full w-14 h-14 bg-slate-200">
-                                                <span class="pt-1">14</span>
-                                                <span>اسفند</span>
+                                            <div class="grid grid-cols-4 items-center">
+                                                <div
+                                                    class="col-span-1 flex flex-col text-center items-center rounded-full w-14 h-14 bg-slate-200">
+                                                    <span class="pt-1">14</span>
+                                                    <span>اسفند</span>
+                                                </div>
+                                                <div class="col-span-3">
+                                                    <h3 class="hover:text-mainColor leading-7">جزئیات طرح‌های
+                                                        اشتغال‌زایی، اقتصادی و زیربنایی دولت در روستاها اعلام شد</h3>
+                                                </div>
                                             </div>
-                                            <div class="col-span-3">
-                                                <h3 class="hover:text-mainColor leading-7">جزئیات طرح‌های اشتغال‌زایی، اقتصادی و زیربنایی دولت در روستاها اعلام شد</h3>
-                                            </div>
-                                        </div>
-                                    </a></li>
+                                        </a></li>
                                     <li><a href="#">
-                                        <div class="grid grid-cols-4 items-center">
-                                            <div class="col-span-1 flex flex-col text-center items-center rounded-full w-14 h-14 bg-slate-200">
-                                                <span class="pt-1">12</span>
-                                                <span>اسفند</span>
+                                            <div class="grid grid-cols-4 items-center">
+                                                <div
+                                                    class="col-span-1 flex flex-col text-center items-center rounded-full w-14 h-14 bg-slate-200">
+                                                    <span class="pt-1">12</span>
+                                                    <span>اسفند</span>
+                                                </div>
+                                                <div class="col-span-3">
+                                                    <h3 class="hover:text-mainColor leading-7">بارش باران و برف در
+                                                        محورهای ۹ استان کشور/ ۷ جاده مسدود است</h3>
+                                                </div>
                                             </div>
-                                            <div class="col-span-3">
-                                                <h3 class="hover:text-mainColor leading-7">بارش باران و برف در محورهای ۹ استان کشور/ ۷ جاده مسدود است</h3>
-                                            </div>
-                                        </div>
-                                    </a></li>
+                                        </a></li>
                                     <li><a href="#">
-                                        <div class="grid grid-cols-4 items-center">
-                                            <div class="col-span-1 flex flex-col text-center items-center rounded-full w-14 h-14 bg-slate-200">
-                                                <span class="pt-1">11</span>
-                                                <span>اسفند</span>
+                                            <div class="grid grid-cols-4 items-center">
+                                                <div
+                                                    class="col-span-1 flex flex-col text-center items-center rounded-full w-14 h-14 bg-slate-200">
+                                                    <span class="pt-1">11</span>
+                                                    <span>اسفند</span>
+                                                </div>
+                                                <div class="col-span-3">
+                                                    <h3 class="hover:text-mainColor leading-7">پیشنهاد رسالت برای کنترل
+                                                        بازار مسکن </h3>
+                                                </div>
                                             </div>
-                                            <div class="col-span-3">
-                                                <h3 class="hover:text-mainColor leading-7">پیشنهاد رسالت برای کنترل بازار مسکن </h3>
-                                            </div>
-                                        </div>
-                                    </a></li>
+                                        </a></li>
                                     <li><a href="#">
-                                        <div class="grid grid-cols-4 items-center">
-                                            <div class="col-span-1 flex flex-col text-center items-center rounded-full w-14 h-14 bg-slate-200">
-                                                <span class="pt-1">11</span>
-                                                <span>اسفند</span>
+                                            <div class="grid grid-cols-4 items-center">
+                                                <div
+                                                    class="col-span-1 flex flex-col text-center items-center rounded-full w-14 h-14 bg-slate-200">
+                                                    <span class="pt-1">11</span>
+                                                    <span>اسفند</span>
+                                                </div>
+                                                <div class="col-span-3">
+                                                    <h3 class="hover:text-mainColor leading-7">لایحه موافقتنامه همکاری
+                                                        اقتصادی دولت های ساحلی خزر اصلاح شد</h3>
+                                                </div>
                                             </div>
-                                            <div class="col-span-3">
-                                                <h3 class="hover:text-mainColor leading-7">لایحه موافقتنامه همکاری اقتصادی دولت های ساحلی خزر اصلاح شد</h3>
-                                            </div>
-                                        </div>
-                                    </a></li>
+                                        </a></li>
                                     <li><a href="#">
-                                        <div class="grid grid-cols-4 items-center">
-                                            <div class="col-span-1 flex flex-col text-center items-center rounded-full w-14 h-14 bg-slate-200">
-                                                <span class="pt-1">11</span>
-                                                <span>اسفند</span>
+                                            <div class="grid grid-cols-4 items-center">
+                                                <div
+                                                    class="col-span-1 flex flex-col text-center items-center rounded-full w-14 h-14 bg-slate-200">
+                                                    <span class="pt-1">11</span>
+                                                    <span>اسفند</span>
+                                                </div>
+                                                <div class="col-span-3">
+                                                    <h3 class="hover:text-mainColor leading-7">داوود منظور رئیس سازمان
+                                                        امور مالیاتی طی بخشنامه‌ای...</h3>
+                                                </div>
                                             </div>
-                                            <div class="col-span-3">
-                                                <h3 class="hover:text-mainColor leading-7">داوود منظور رئیس سازمان امور مالیاتی طی بخشنامه‌ای...</h3>
-                                            </div>
-                                        </div>
-                                    </a></li>
+                                        </a></li>
                                 </ul>
                             </div>
                         </section>
@@ -544,15 +677,21 @@
     <footer class="footer mt-6 w-full py-6 bg-mainColor">
         <div class="container mx-auto sm:px-16 px-1">
             <ul class="flex flex-row justify-center space-x-5 space-x-reverse w-full">
-                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-brands fa-telegram"></i></a></li>
-                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-regular fa-envelope"></i></a></li>
-                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white" href="#"><i class="fa-solid fa-rss"></i></a></li>
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white"
+                        href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white"
+                        href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white"
+                        href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white"
+                        href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white"
+                        href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                <li class="hover:-mt-1 transition-all duration-200"><a class="text-white text-3xl hover:text-white"
+                        href="#"><i class="fa-solid fa-rss"></i></a></li>
             </ul>
             <nav class="w-full">
-                <ul class="flex flex-row justify-center mt-4 footer-menu mb-6">
+                <ul class="flex lg:flex-row justify-center mt-4 footer-menu mb-6 flex-col">
                     <li><a class="text-white hover:text-white" href="#">خط و مشی سازمانی</a></li>
                     <li><a class="text-white hover:text-white" href="#">ارتباط باما</a></li>
                     <li><a class="text-white hover:text-white" href="#">فروشگاه کار آفرینی</a></li>
@@ -566,7 +705,8 @@
                     <li class="bg-white rounded-xl p-3"><img src="./assets/img/samandehi-logo.png" alt=""></li>
                 </ul>
             </div>
-            <p class="w-full text-center text-white">این وبسایت توسط کار و کار آفرینی طراحی شده و کلیه حقوق آن محفوظ است.</p>
+            <p class="w-full text-center text-white">این وبسایت توسط کار و کار آفرینی طراحی شده و کلیه حقوق آن محفوظ
+                است.</p>
         </div>
     </footer>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
