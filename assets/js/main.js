@@ -73,29 +73,29 @@ $("#indexslide3").owlCarousel({
   },
 });
 $("#indexslide4").owlCarousel({
-    rtl: false,
-    loop: true,
-    margin: 20,
-    nav: false,
-    dots: true,
-    autoplay: true,
-    autoplayTimeout: 7000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      1000: {
-        items: 1,
-      },
-      1200: {
-        items: 1,
-      },
+  rtl: false,
+  loop: true,
+  margin: 20,
+  nav: false,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 7000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
     },
-  });
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+    1200: {
+      items: 1,
+    },
+  },
+});
 var owl = $("#indexslide");
 owl.owlCarousel();
 // Go to the next item
@@ -109,10 +109,23 @@ $(".am-prev").click(function () {
   owl.trigger("prev.owl.carousel", [300]);
 });
 //Sticky Sidebar
-var sidebar = new StickySidebar('.sidebar', {
-  containerSelector: '#main-content',
-  innerWrapperSelector: '.sidebar__inner',
+var sidebar = new StickySidebar(".sidebar", {
+  containerSelector: "#main-content",
+  innerWrapperSelector: ".sidebar__inner",
   topSpacing: 10,
   bottomSpacing: 10,
   minWidth: 1024,
+});
+// TextSize
+const singleContent = document.querySelector(".singlecontent");
+const textPlus = document.querySelector(".textplus");
+const textMines = document.querySelector(".textminus");
+let fontSize = 0.9;
+textPlus.addEventListener("click", () => {
+  fontSize += 0.1;
+  singleContent.style.fontSize = `${fontSize}rem`;
+});
+textMines.addEventListener("click", () => {
+  fontSize -= 0.1;
+  singleContent.style.fontSize = `${fontSize}rem`;
 });
